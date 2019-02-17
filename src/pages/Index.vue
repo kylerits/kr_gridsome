@@ -2,7 +2,6 @@
   <Layout>
     
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/svgs/KR-Logo-FINAL.svg" width="40" />
     
     <h1>Hello, world!</h1>
    
