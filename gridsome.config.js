@@ -7,5 +7,12 @@
 module.exports = {
   siteName: 'KR Portfolio',
   siteDescription: 'The web development portfolio for Fort Wayne native, Kyle Rodgers',
-  plugins: []
+  plugins: [],
+  icon: {
+    favicon: {
+      src: 'src/assets/favicon/favicon-16x16.png'
+    },
+    touchicon: 'src/assets/favicon/favicon-16x16.png'
+  }
 }
+

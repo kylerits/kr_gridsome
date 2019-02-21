@@ -3,7 +3,7 @@
         <g-link :to="{ name: 'home' }" class="circle-button">
             <g-image alt="Example image" src="~/assets/svgs/KR-Logo-FINAL.svg" width="30" />
         </g-link>
-        <button class="circle-button" id="triggerNav" @click="toggleNav()">...</button>
+        <button class="circle-button" :class="{ visible: visible }" id="triggerNav" @click="toggleNav()">...</button>
         <nav class="nav" v-if="visible">
             <g-link class="nav__link" :to="{ name: 'home' }">Home</g-link>
             <g-link class="nav__link" :to="{ name: 'about' }">About</g-link>
@@ -44,6 +44,12 @@ export default {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
+}
+.nav {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 100%;
+    margin: 0 1rem;
 }
 </style>
 
