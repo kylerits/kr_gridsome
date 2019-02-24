@@ -5,8 +5,7 @@
         </g-link>
         <button class="circle-button" :class="{ visible: visible }" id="triggerNav" @click="toggleNav()">...</button>
         <nav class="nav" v-if="visible">
-            <g-link class="nav__link" :to="{ name: 'home' }">Home</g-link>
-            <g-link class="nav__link" :to="{ name: 'about' }">About</g-link>
+            <Menu />
         </nav>
     </header>
 </template>
@@ -20,8 +19,13 @@ query {
 </static-query>
 
 <script>
+import Menu from '~/components/Menu.vue'
+
 export default {
     name: 'Header',
+    components: {
+        Menu
+    },
     data() {
         return {
             visible: false
