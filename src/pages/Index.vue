@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .home-links a {
   margin-right: 1rem;
 }

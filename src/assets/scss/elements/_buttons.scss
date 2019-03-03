@@ -1,0 +1,43 @@
+// Circle button for nav
+.circle-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    border-radius: 50%;
+
+    transition: transform 350ms, box-shadow 350ms;
+    transform: translateY(0);
+    box-shadow: $shadow;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: $shadowHover;
+    }
+}
+
+// Pill button for nav
+.pill-button {
+    display: inline-block;
+    padding: 0.3rem 1.5rem;
+    background: whitesmoke;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: $primary;
+
+    transition: all 350ms;
+    transform: translateY(0);
+    box-shadow: $shadow;
+
+    &:hover {
+        color: darken($color: $primary, $amount: 10);
+        transform: translateY(-2px);
+        box-shadow: $shadowHover;
+    }
+}

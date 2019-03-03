@@ -1,0 +1,14 @@
+// Color
+$primary: #7BA6C9;
+$secondary: #FF736E;
+$white: #ffffff;
+
+// Fonts
+$body-font: eb-garamond, serif;
+$title-font: museo-sans, sans-serif;
+$base-font-size: 1.1rem;
+
+
+// Drop Shadow
+$shadow: 0 2px 5px -2px transparentize($color: #000000, $amount: 0.5);
+$shadowHover: 0 4px 7px -2px transparentize($color: #000000, $amount: 0.7);

@@ -10,7 +10,8 @@ module.exports = {
   plugins: [],
   icon: {
     favicon: {
-      src: 'src/assets/favicon/favicon-16x16.png'
+      src: 'src/assets/favicon/favicon-16x16.png',
+      sizes: [16]
     },
     touchicon: 'src/assets/favicon/favicon-16x16.png'
   }
