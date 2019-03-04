@@ -14,6 +14,13 @@ module.exports = {
       sizes: [16]
     },
     touchicon: 'src/assets/favicon/favicon-16x16.png'
+  },
+  chainWebpack: config => {
+    const svgRule = config.module.rule('svg')
+    svgRule.uses.clear()
+    svgRule
+      .use('vue-svg-loader')
+      .loader('vue-svg-loader')
   }
 }
 

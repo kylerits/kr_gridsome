@@ -1,9 +1,11 @@
 // Global
 @import "global/variables";
+@import "~bootstrap/scss/bootstrap-grid.scss";
 @import "global/typography";
 
 // Layout
 @import "layout/body";
+@import "layout/grid";
 
 // Elements
 @import "elements/buttons";

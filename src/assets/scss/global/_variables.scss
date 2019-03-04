@@ -2,11 +2,29 @@
 $primary: #7BA6C9;
 $secondary: #FF736E;
 $white: #ffffff;
+$dark: #4d5358;
+$light: #eef0f3;
 
 // Fonts
 $body-font: eb-garamond, serif;
 $title-font: museo-sans, sans-serif;
 $base-font-size: 1.1rem;
+$base-font-color: $dark;
+
+// Layouts
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 
 
 // Drop Shadow
