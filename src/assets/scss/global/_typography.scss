@@ -33,3 +33,18 @@ p a {
         }
     }
 }
+
+.title {
+    @include media-breakpoint-up(md) {
+        font-size: 3rem;
+        line-height: 1;
+    }
+}
+
+.text-primary {
+    color: $primary;
+}
+
+.text-secondary {
+    color: $secondary;
+}

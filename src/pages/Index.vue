@@ -2,28 +2,25 @@
   <Layout>
     
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-
-    <div class="container">
+    <intro>
       
-      <h1>Hello, world!</h1>
+      <h1 class="title">I am a<br> web developer.</h1>
     
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        I utilize tools afforded me by countless hours of learning, practice, testing, failure, and success in order to create digital productls that make an impact in the physical world.
       </p>
 
-      <p class="home-links">
-        <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
-        <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-      </p>
-      
-    </div>
+    </intro>
 
   </Layout>
 </template>
 
 <script>
+import Intro from '~/components/Intro.vue'
 export default {
- // ..
+ components: {
+   Intro
+ }
 }
 </script>
 
