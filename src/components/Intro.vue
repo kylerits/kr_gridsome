@@ -28,12 +28,20 @@ export default {
 .full-screen {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
+    @media (min-width: $md) {
+        min-height: 85vh;
+    }
 }
 
 .full-height {
-    height: 100vh;
+    height: auto;
+    padding: 2rem 0;
+    @media (min-width: $md) {
+        padding: 0;
+        min-height: 85vh;
+    }
 }
 
 .background-wrap {
@@ -42,6 +50,6 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 </style>

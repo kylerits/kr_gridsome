@@ -43,7 +43,7 @@ export default {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        transform: skewY(6deg);
+        transform: $skew;
 
         .grid-item {
             position: relative;

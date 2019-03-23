@@ -6,6 +6,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin-top: 0;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 p a {
@@ -35,9 +44,9 @@ p a {
 }
 
 .title {
+    line-height: 1;
     @include media-breakpoint-up(md) {
         font-size: 3rem;
-        line-height: 1;
     }
 }
 

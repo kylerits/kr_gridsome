@@ -1,6 +1,6 @@
 // Color
 $primary: #7BA6C9;
-$secondary: #FF736E;
+$secondary: rgb(221, 98, 94);
 $white: #ffffff;
 $dark: #4d5358;
 $light: #eef0f3;
@@ -30,3 +30,7 @@ $xl: 1200px;
 // Drop Shadow
 $shadow: 0 2px 5px -2px transparentize($color: #000000, $amount: 0.5);
 $shadowHover: 0 4px 7px -2px transparentize($color: #000000, $amount: 0.7);
+
+// Transforms
+$skew: skewY(5deg);
+$skewAlt: skewY(-5deg);
