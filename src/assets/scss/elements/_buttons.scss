@@ -54,3 +54,39 @@
         box-shadow: $shadowHover;
     }
 }
+
+// Generic button
+
+.btn {
+    font-family: $title-font;
+    font-weight: 200;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    border: solid 0.1rem;
+    border-radius: 0.2rem;
+    background: transparent;
+
+    transition: all 350ms;
+
+    &:before {
+        display: none;
+    }
+
+    &.btn-primary {
+        color: $primary;
+        border-color: $primary;
+        &:hover {
+            color: $white;
+            background: $primary;
+        }
+    }
+    &.btn-secondary {
+        color: $secondary;
+        border-color: $secondary;
+        &:hover {
+            color: $white;
+            background: $secondary;
+        }
+    }
+}

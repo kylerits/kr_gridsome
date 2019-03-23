@@ -9,9 +9,25 @@ body {
     line-height: 1.5;
 }
 
-.layout {
-    max-width: 760px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+.section-padding {
+    padding: 2rem 0;
+    @include media-breakpoint-up(md) {
+        padding: 4rem 0;
+    }
+}
+.section-margin {
+    margin: 2rem 0;
+    @include media-breakpoint-up(md) {
+        margin: 4rem 0;
+    }
+}
+
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
 }

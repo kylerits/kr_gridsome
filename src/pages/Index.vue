@@ -14,17 +14,38 @@
       </tile>
     </intro>
 
+    <section class="section-margin">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <p class="mb-0">Need help on a project?</p>
+            <h2 class="title">You may need a freelancer.</h2>
+            <p>
+              <g-link :to="{ name: 'freelance' }" class="btn btn-secondary">Learn more</g-link>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <tool-box>
+      <h2>Check out what is in my tool box.</h2>
+      <p>This is a collection of some of my favorite tools to use when building websites.</p>
+    </tool-box>
+
   </Layout>
 </template>
 
 <script>
 import Intro from '~/components/Intro.vue'
 import Tile from '~/components/Tile.vue'
+import ToolBox from '~/components/ToolBox.vue'
 
 export default {
  components: {
    Intro,
-   Tile
+   Tile,
+   ToolBox
  }
 }
 </script>
