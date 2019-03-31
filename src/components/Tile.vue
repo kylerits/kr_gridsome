@@ -1,13 +1,21 @@
 <template>
-    <div class="tile" :class="type">
-        <slot>This is just some dummy text.</slot>
-        <div class="lines-wrap">
-            <lines type="secondary" />
+    <transition
+        appear
+        appear-class="slide"
+        appear-to-class="slide-to"
+        appear-active-class="slide-active">
+        <div class="tile" :class="type">
+            <div class="tile-inner">
+                <slot>This is just some dummy text.</slot>
+            </div>
+            <div class="lines-wrap">
+                <lines type="secondary" />
+            </div>
+            <div class="circles-wrap">
+                <circles type="secondary" />
+            </div>
         </div>
-        <div class="circles-wrap">
-            <circles type="secondary" />
-        </div>
-    </div>
+    </transition>
 </template>
 
 <script>
@@ -30,8 +38,9 @@ export default {
     position: relative;
     padding: 2.4rem 2rem;
 
-    * {
+    .tile-inner {
         position: relative;
+        z-index: 2;
     }
 
     .lines-wrap {
@@ -77,5 +86,23 @@ export default {
         }
     }
 
+
+}
+
+// Transition
+.slide-active {
+    transform: translate(20%, 10%);
+    opacity: 0;
+    transition: all 400ms;
+}
+.slide {
+    transform: translate(-20%, -10%);
+    opacity: 0;
+    transition: all 400ms;
+}
+.slide-to {
+    transform: translate(0,0);
+    opacity: 1;
+    transition: all 400ms;
 }
 </style>
