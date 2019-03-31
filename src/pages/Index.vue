@@ -30,7 +30,7 @@
 
     <tool-box>
       <h2>Check out what is in my tool box.</h2>
-      <p>This is a collection of some of my favorite tools to use when building websites.</p>
+      <p>This is a collection of some of my favorite tools to use when building websites. I try to stay up to date with latest technology that is available, both for the benefit of client and because I have an incessant need desire to play tech that in new and shiny.</p>
     </tool-box>
 
   </Layout>

@@ -5,9 +5,13 @@ import Velocity from 'velocity-animate';
 
 import DefaultLayout from '~/layouts/Default.vue';
 
+import VueRellax from 'vue-rellax';
+
 export default function (Vue, {router, head, isClient}) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
+
+  Vue.use(VueRellax);
 
   // Populate Head
   head.link.push({

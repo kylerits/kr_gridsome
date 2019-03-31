@@ -1,6 +1,6 @@
 <template>
     <section id="intro" class="full-screen">
-        <bg-grid color="primary" />
+        <bg-grid v-rellax="rellax" color="primary" />
         <div class="content-wrap">
             <div class="container">
                 <div class="row full-height align-content-center">
@@ -18,7 +18,14 @@ import BgGrid from '~/components/BgGrid.vue'
 export default {
     components: {
         BgGrid
-    }
+    },
+    data() {
+        return {
+            rellax: {
+                speed: -4
+            }
+        }
+    },
 }
 </script>
 

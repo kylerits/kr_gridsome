@@ -6890,6 +6890,11 @@ relateurl@0.2.x:
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
 
+rellax@^1.7.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/rellax/-/rellax-1.9.1.tgz#aca23c1acf3867e66348234f86da435d7ccc3c49"
+  integrity sha512-z1wQwbmVYy3NoVbNxdnYyXyUG/2wBpyKPSsoFhb44Tv5mooSueqURcksHxO9zarm2adFob6qT5xMtpb30F0iVA==
+
 remark-autolink-headings@^5.0.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/remark-autolink-headings/-/remark-autolink-headings-5.1.0.tgz#73c92bcf6b0b4bddf2a52696d4434d77e4b1c962"
@@ -8482,6 +8487,14 @@ vue-meta@^1.5.8:
     lodash.isplainobject "^4.0.6"
     lodash.uniqueid "^4.0.1"
     object-assign "^4.1.1"
+
+vue-rellax@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/vue-rellax/-/vue-rellax-0.1.0.tgz#799af31646079384947157649a453f794ad24687"
+  integrity sha512-S10yxVGyCdK9ul8F2EsG+NKK5XOPIxzuj9QQTUYkAcVhOaCNUWkOqJYeo5w3YnSXYdvE9a5wqsrmG7ow8cg8zQ==
+  dependencies:
+    rellax "^1.7.1"
+    tslib "^1.9.3"
 
 vue-router@^3.0.2:
   version "3.0.2"

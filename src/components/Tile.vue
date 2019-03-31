@@ -8,10 +8,10 @@
             <div class="tile-inner">
                 <slot>This is just some dummy text.</slot>
             </div>
-            <div class="lines-wrap">
+            <div class="lines-wrap" v-rellax="rellax">
                 <lines type="secondary" />
             </div>
-            <div class="circles-wrap">
+            <div class="circles-wrap" v-rellax="rellax">
                 <circles type="secondary" />
             </div>
         </div>
@@ -24,6 +24,18 @@ import Circles from '~/components/Circles.vue'
 
 export default {
     props: [ 'type' ],
+    data() {
+        return {
+            rellax: {
+                speed: 0.5,
+                center: true,
+                // percentage: 1,
+                wrapper: this.$el,
+                // min: -100,
+                // max: 100
+            }
+        }
+    },
     components: {
         Lines,
         Circles
@@ -45,7 +57,7 @@ export default {
 
     .lines-wrap {
         position: absolute;
-        top: 0;
+        top: 1rem;
         right: 3rem;
     }
 
