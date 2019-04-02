@@ -38,7 +38,7 @@ export default {
     height: auto;
     overflow: hidden;
     @media (min-width: $md) {
-        min-height: 85vh;
+        min-height: 95vh;
     }
 }
 

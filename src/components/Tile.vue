@@ -49,6 +49,7 @@ export default {
 .tile {
     position: relative;
     padding: 2.4rem 2rem;
+    margin: 1.5rem 0 2rem 0;
 
     .tile-inner {
         position: relative;
@@ -79,7 +80,7 @@ export default {
         border-radius: 0.4rem;
         z-index: 0;
 
-        background: linear-gradient(.25turn, transparentize($white, 0.5), transparentize($light, 0.5));
+        background: linear-gradient(.25turn, transparentize($white, 0.3), transparentize($light, 0.3));
     }
 
     &.dark {
@@ -88,13 +89,13 @@ export default {
             color: $white;
         }
         &:before {
-            background: linear-gradient(.25turn, transparentize($dark, 0.5), transparentize(darken($dark, 8%), 0.5));
+            background: linear-gradient(.25turn, transparentize($dark, 0.3), transparentize(darken($dark, 8%), 0.3));
         }
     }
     
     &.light {
         &:before {
-            background: linear-gradient(.25turn, transparentize($white, 0.5), transparentize($light, 0.5));
+            background: linear-gradient(.25turn, transparentize($white, 0.3), transparentize($light, 0.3));
         }
     }
 
