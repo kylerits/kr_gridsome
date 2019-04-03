@@ -4,7 +4,7 @@
         appear-class="slide"
         appear-to-class="slide-to"
         appear-active-class="slide-active">
-        <div class="tile" :class="type">
+        <div class="tile" :class="type" v-tilt="tilt">
             <div class="tile-inner">
                 <slot>This is just some dummy text.</slot>
             </div>
@@ -33,6 +33,28 @@ export default {
                 wrapper: this.$el,
                 // min: -100,
                 // max: 100
+            },
+            tilt: {
+                reverse:                false,  // reverse the tilt direction
+                max:                    25,     // max tilt rotation (degrees)
+                perspective:            1000,   // Transform perspective, the lower the more extreme the tilt gets.
+                scale:                  1,      // 2 = 200%, 1.5 = 150%, etc..
+                speed:                  400,    // Speed of the enter/exit transition
+                transition:             true,   // Set a transition on enter/exit.
+                axis:                   null,   // What axis should be disabled. Can be X or Y.
+                reset:                  true,   // If the tilt effect has to be reset on exit.
+                easing:                 "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+                glare:                  true,   // if it should have a "glare" effect
+                "max-glare":            1,      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
+                "glare-prerender":      false,  // false = VanillaTilt creates the glare elements for you, otherwise
+                                                // you need to add .js-tilt-glare>.js-tilt-glare-inner by yourself
+                "mouse-event-element":  null,    // css-selector or link to HTML-element what will be listen mouse events
+                                                // you need to add .js-tilt-glare>.js-tilt-glare-inner by yourself
+                gyroscope:              true,    // Boolean to enable/disable device orientation detection,
+                gyroscopeMinAngleX:     -45,    // This is the bottom limit of the device angle on X axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the left border of the element;
+                gyroscopeMaxAngleX:     45,      // This is the top limit of the device angle on X axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the right border of the element;
+                gyroscopeMinAngleY:     -45,     // This is the bottom limit of the device angle on Y axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the top border of the element;
+                gyroscopeMaxAngleY:     45      // This is the top limit of the device angle on Y axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the bottom border of the element;
             }
         }
     },
@@ -49,11 +71,14 @@ export default {
 .tile {
     position: relative;
     padding: 2.4rem 2rem;
-    margin: 1.5rem 0 2rem 0;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) translateZ(40px);
+    color: $dark;
 
     .tile-inner {
         position: relative;
         z-index: 2;
+        transform: translateZ(-20px);
     }
 
     .lines-wrap {
@@ -75,7 +100,7 @@ export default {
         left: -0.5rem;
         width: 100%;
         height: 100%;
-        transform: $skew;
+        transform: $skew translateZ(-40px);
         box-shadow: $shadow;
         border-radius: 0.4rem;
         z-index: 0;
@@ -94,6 +119,7 @@ export default {
     }
     
     &.light {
+        color: $dark;
         &:before {
             background: linear-gradient(.25turn, transparentize($white, 0.3), transparentize($light, 0.3));
         }

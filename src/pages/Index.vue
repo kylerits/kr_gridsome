@@ -16,22 +16,16 @@
 
     <section class="section-margin">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6 text-center">
-            <p class="mb-0">Need help on a project?</p>
-            <h2 class="title">You may need a freelancer.</h2>
-            <p>
-              <g-link :to="{ name: 'freelance' }" class="btn btn-secondary">Learn more</g-link>
-            </p>
-          </div>
+        <div class="text-center">
+          <h2 class="title">The Toolbox</h2>
         </div>
       </div>
-    </section>
 
-    <tool-box>
-      <h2>Check out what is in my tool box.</h2>
-      <p>This is a collection of some of my favorite tools to use when building websites. I try to stay up to date with latest technology that is available, both for the benefit of client and because I have an incessant need desire to play tech that in new and shiny.</p>
-    </tool-box>
+      <tool-box>
+        <h2>An ever-growing list:</h2>
+        <p>This is a collection of some of my favorite tools to use when building websites. I try to stay up to date with latest technology that is available, both for the benefit of client and because I have an incessant need desire to play tech that in new and shiny.</p>
+      </tool-box>
+    </section>
 
   </Layout>
 </template>

@@ -1,7 +1,9 @@
 <template>
   <div id="main">
-    <header-comp />
-    <slot/>
+    <main id="default">
+      <header-comp />
+      <slot/>
+    </main>
   </div>
 </template>
 
@@ -25,4 +27,10 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/main.scss";
+
+body {
+  background: darken($primary, 2%);
+  color: $light;
+  padding-bottom: 1rem;
+}
 </style>
