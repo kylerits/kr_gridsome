@@ -40,7 +40,7 @@ export default {
 
     &.secondary {
         .line {
-            background: $secondary;
+            background: lighten($secondary, 10);
         }
     }
 }

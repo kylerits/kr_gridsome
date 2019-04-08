@@ -42,7 +42,7 @@ export default {
 
     &.secondary {
         .circle {
-            border-color: $secondary;
+            border-color: lighten($secondary, 10);
         }
     }
 }
