@@ -3,11 +3,17 @@
         <bg-grid v-rellax="rellax" color="primary" />
         <div class="content-wrap">
             <div class="container">
+
+                <div class="illustration-wrap" v-if="illustration">
+
+                </div>
+
                 <div class="row full-height align-content-center">
                     <div class="col-md-8 col-lg-6">
                         <slot></slot>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -16,6 +22,7 @@
 <script>
 import BgGrid from '~/components/BgGrid.vue'
 export default {
+    props: [ 'illustration' ],
     components: {
         BgGrid
     },

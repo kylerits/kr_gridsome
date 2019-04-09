@@ -35,11 +35,14 @@ import Intro from '~/components/Intro.vue'
 import Tile from '~/components/Tile.vue'
 import ToolBox from '~/components/ToolBox.vue'
 
+import Desktop from '~/assets/svgs/work_setup.svg'
+
 export default {
  components: {
    Intro,
    Tile,
-   ToolBox
+   ToolBox,
+   Desktop
  }
 }
 </script>
