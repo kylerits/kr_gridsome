@@ -2,10 +2,13 @@
     <section id="intro" class="full-screen">
         <bg-grid v-rellax="rellax" color="primary" />
         <div class="content-wrap">
-            <div class="container">
+            <div class="container position-relative">
 
                 <div class="illustration-wrap" v-if="illustration">
-
+                    <div class="illustration">
+                        <slot name="illustration"></slot>
+                    </div>
+                    <div class="slope"></div>
                 </div>
 
                 <div class="row full-height align-content-center">
@@ -65,5 +68,28 @@ export default {
     width: 100%;
     height: 100%;
     opacity: 0.8;
+}
+
+.illustration-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+
+    .illustration {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        max-width: 50%;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+
 }
 </style>

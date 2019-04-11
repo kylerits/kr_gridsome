@@ -2,7 +2,7 @@
   <Layout>
     
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <intro>
+    <intro illustration="true">
       <tile type="light">
 
         <h1 class="title">I am a<br> web developer.</h1>
@@ -12,6 +12,11 @@
         </p>
 
       </tile>
+
+      <span slot="illustration">
+        <desktop />
+      </span>
+
     </intro>
 
     <section class="section-margin">
