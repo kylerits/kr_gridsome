@@ -30,8 +30,8 @@ $xl: 1200px;
 
 
 // Drop Shadow
-$shadow: 0 10px 25px -15px transparentize($color: #000000, $amount: 0.3);
-$shadowHover: 0 12px 27px -15px transparentize($color: #000000, $amount: 0.4);
+$shadow: 0 5px 10px -5px transparentize($color: #000000, $amount: 0.3);
+$shadowHover: 0 4px 12px -5px transparentize($color: #000000, $amount: 0.4);
 
 // Transforms
 $skew: skewY(5deg);

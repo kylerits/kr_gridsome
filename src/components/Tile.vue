@@ -105,7 +105,7 @@ export default {
         border-radius: 0.4rem;
         z-index: 0;
 
-        background: linear-gradient(.25turn, transparentize($white, 0.3), transparentize($light, 0.3));
+        background: linear-gradient(.25turn, transparentize($white, 0.1), transparentize($light, 0.1));
     }
 
     &.dark {
@@ -121,7 +121,7 @@ export default {
     &.light {
         color: $dark;
         &:before {
-            background: linear-gradient(.25turn, transparentize($white, 0.3), transparentize($light, 0.3));
+            background: linear-gradient(.25turn, transparentize($white, 0.1), transparentize($light, 0.1));
         }
     }
 

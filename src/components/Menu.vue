@@ -74,13 +74,15 @@ export default {
 @import "../assets/scss/global/_variables.scss";
 
 .nav-list {
-    display: flex;
+    display: block;
+    text-align: right;
     padding: 0;
     margin: 0;
 
     .nav-item {
         display: block;
         margin: 0 0.5rem;
+        margin-bottom: 0.8rem;
 
         .nav-link {
             font-size: 0.85rem;
@@ -88,9 +90,14 @@ export default {
             letter-spacing: 1px;
             display: inline-flex;
             align-items: center;
+
+            .icon-wrap {
+                margin-left: -0.5rem;
+                margin-right: 0.5rem;
+            }
             
             .link-text {
-                display: none;
+                display: inline;
             }
 
         }
@@ -103,15 +110,6 @@ export default {
         text-align: right;
         .nav-item {
             margin-bottom: 0.8rem;
-            .nav-link {
-                .icon-wrap {
-                    margin-left: -0.5rem;
-                    margin-right: 0.5rem;
-                }
-                .link-text {
-                    display: inline;
-                }
-            }
         }
     }
 }

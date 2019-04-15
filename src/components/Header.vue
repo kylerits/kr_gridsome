@@ -54,8 +54,8 @@ export default {
 .header {
     position: fixed;
     z-index: 1000;
-    bottom: 2rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
 }
 
 .logo {
@@ -65,8 +65,8 @@ export default {
 
 .nav {
     position: absolute;
-    bottom: 1.8rem;
-    right: 100%;
+    top: 100%;
+    right: 0;
     margin: 0 1rem;
 }
 

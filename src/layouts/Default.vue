@@ -29,8 +29,10 @@ export default {
 @import "../assets/scss/main.scss";
 
 body {
-  background: darken($primary, 2%);
-  color: $light;
+  // background: darken($primary, 2%);
+  // color: $light;
+  background: white;
+  color: $dark;
   padding-bottom: 1rem;
 }
 </style>

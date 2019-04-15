@@ -4,11 +4,10 @@
         <div class="content-wrap">
             <div class="container position-relative">
 
-                <div class="illustration-wrap" v-if="illustration">
+                <div class="illustration-wrap" v-if="illustration" v-rellax="rellax">
                     <div class="illustration">
                         <slot name="illustration"></slot>
                     </div>
-                    <div class="slope"></div>
                 </div>
 
                 <div class="row full-height align-content-center">
@@ -19,6 +18,7 @@
 
             </div>
         </div>
+        <div class="slope"></div>
     </section>
 </template>
 
@@ -33,13 +33,13 @@ export default {
         return {
             rellax: {
                 speed: -4
-            }
+            },
         }
     },
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../assets/scss/global/variables";
 
 .full-screen {
@@ -47,7 +47,12 @@ export default {
     width: 100%;
     height: auto;
     overflow: hidden;
+    padding-top: 20vh;
+    padding-bottom: 4rem;
+
     @media (min-width: $md) {
+        padding-top: 0;
+        padding-bottom: 0;
         min-height: 95vh;
     }
 }
@@ -70,6 +75,16 @@ export default {
     opacity: 0.8;
 }
 
+.slope {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    // background: $white;
+    border-bottom: 5vh solid $white;
+    border-right: 100vw solid transparent;
+}
+
 .illustration-wrap {
     position: absolute;
     width: 100%;
@@ -78,18 +93,40 @@ export default {
     right: 0;
 
     .illustration {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        max-width: 50%;
+        padding: 1rem;
+    }
+}
 
-        svg {
-            width: 100%;
-            height: auto;
-        }
+@media (min-width: $md) {
+    .slope {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        // background: $white;
+        border-bottom: 15vh solid $white;
+        border-right: 100vw solid transparent;
     }
 
+    .illustration-wrap {
+        padding-top: 0;
 
+        .illustration {
+            position: absolute;
+            width: 50vw;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            padding: 0;
+
+            svg {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+
+    }
 }
+
 </style>

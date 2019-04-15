@@ -13,9 +13,9 @@
 
       </tile>
 
-      <span slot="illustration">
+      <div slot="illustration">
         <desktop />
-      </span>
+      </div>
 
     </intro>
 
