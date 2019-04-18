@@ -1,7 +1,7 @@
 <template>
   <div id="main">
     <main id="default">
-      <header-comp />
+      <header-comp/>
       <slot/>
     </main>
   </div>
@@ -16,13 +16,13 @@ query {
 </static-query>
 
 <script>
-import HeaderComp from '~/components/Header.vue'
+import HeaderComp from "~/components/Header.vue";
 
 export default {
   components: {
     HeaderComp
-  }  
-}
+  }
+};
 </script>
 
 <style lang="scss">
