@@ -1,22 +1,21 @@
 <template>
   <Layout>
-    
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <intro illustration="true">
       <tile type="light">
+        <g-image slot="background" src="~/assets/images/jk_dev.jpg"/>
 
-        <h1 class="title">I am a<br> web developer.</h1>
-      
-        <p>
-          I utilize tools afforded me by hours of learning, practicing, testing, failing, and succeeding in order to create digital productls that make an impact in the physical world.
-        </p>
+        <h1 class="title">
+          I am a
+          <br>web developer.
+        </h1>
 
+        <p>I utilize tools afforded me by hours of learning, practicing, testing, failing, and succeeding in order to create digital productls that make an impact in the physical world.</p>
       </tile>
 
-      <div slot="illustration">
-        <desktop />
-      </div>
-
+      <!-- <div slot="illustration">
+        <desktop/>
+      </div>-->
     </intro>
 
     <section class="section-margin">
@@ -31,25 +30,24 @@
         <p>This is a collection of some of my favorite tools to use when building websites. I try to stay up to date with latest technology that is available, both for the benefit of client and because I have an incessant need desire to play tech that in new and shiny.</p>
       </tool-box>
     </section>
-
   </Layout>
 </template>
 
 <script>
-import Intro from '~/components/Intro.vue'
-import Tile from '~/components/Tile.vue'
-import ToolBox from '~/components/ToolBox.vue'
+import Intro from "~/components/Intro.vue";
+import Tile from "~/components/Tile.vue";
+import ToolBox from "~/components/ToolBox.vue";
 
-import Desktop from '~/assets/svgs/work_setup.svg'
+import Desktop from "~/assets/svgs/work_setup.svg";
 
 export default {
- components: {
-   Intro,
-   Tile,
-   ToolBox,
-   Desktop
- }
-}
+  components: {
+    Intro,
+    Tile,
+    ToolBox,
+    Desktop
+  }
+};
 </script>
 
 <style lang="scss">

@@ -2,25 +2,25 @@
 $primary: #336e7b;
 $secondary: #d64541;
 $white: #ffffff;
-$dark: #4d5358;
+$dark: #303538;
 $light: #eef0f3;
 
 // Fonts
-$body-font: eb-garamond, serif;
-$title-font: museo-sans, sans-serif;
+$body-font: eb-garamond,
+serif;
+$title-font: museo-sans,
+sans-serif;
 $base-font-size: 1.1rem;
 $base-font-color: $dark;
 
 $input-btn-font-family: $title-font;
 
 // Layouts
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-);
+$grid-breakpoints: (xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px);
 
 $xs: 0;
 $sm: 576px;

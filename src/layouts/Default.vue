@@ -31,8 +31,9 @@ export default {
 body {
   // background: darken($primary, 2%);
   // color: $light;
-  background: white;
-  color: $dark;
+  // background: white;
+  background: $dark;
+  color: $white;
   padding-bottom: 1rem;
 }
 </style>
