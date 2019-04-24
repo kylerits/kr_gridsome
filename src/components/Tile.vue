@@ -12,6 +12,9 @@
       <div class="tile-inner">
         <slot>This is just some dummy text.</slot>
       </div>
+      <div class="tile-icon-wrap">
+        <slot name="icon"></slot>
+      </div>
       <!-- <div class="lines-wrap" v-rellax="rellax">
                 <lines type="secondary" />
             </div>
@@ -40,7 +43,7 @@ export default {
       },
       tilt: {
         reverse: false, // reverse the tilt direction
-        max: 25, // max tilt rotation (degrees)
+        max: 15, // max tilt rotation (degrees)
         perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
         scale: 1, // 2 = 200%, 1.5 = 150%, etc..
         speed: 400, // Speed of the enter/exit transition
@@ -110,6 +113,21 @@ export default {
     );
     // background: $white;
     // opacity: 0.8;
+  }
+
+  .tile-icon-wrap {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 2.5rem;
+    z-index: 2;
+    opacity: 0.8;
+    svg {
+      width: 4rem;
+      height: 2.5rem;
+      color: $white;
+    }
   }
 
   .lines-wrap {

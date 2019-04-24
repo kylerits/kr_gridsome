@@ -11,6 +11,8 @@
         </h1>
 
         <p>I utilize tools afforded me by hours of learning, practicing, testing, failing, and succeeding in order to create digital productls that make an impact in the physical world.</p>
+
+        <logo slot="icon"/>
       </tile>
 
       <!-- <div slot="illustration">
@@ -39,13 +41,15 @@ import Tile from "~/components/Tile.vue";
 import ToolBox from "~/components/ToolBox.vue";
 
 import Desktop from "~/assets/svgs/work_setup.svg";
+import Logo from "~/assets/svgs/KR-Logo-FINAL.svg";
 
 export default {
   components: {
     Intro,
     Tile,
     ToolBox,
-    Desktop
+    Desktop,
+    Logo
   }
 };
 </script>
