@@ -1,10 +1,22 @@
 <template>
   <Layout>
-    <h1>Freelance</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <!-- Page Intro -->
+    <intro>
+      <tile type="light">
+        <h1 class="title">A freelancer for fun.</h1>
+      </tile>
+    </intro>
   </Layout>
 </template>
 
 <script>
-export default {}
+import Intro from "~/components/Intro.vue";
+import Tile from "~/components/Tile.vue";
+
+export default {
+  components: {
+    Intro,
+    Tile
+  }
+};
 </script>

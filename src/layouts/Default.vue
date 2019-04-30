@@ -3,6 +3,7 @@
     <main id="default">
       <header-comp/>
       <slot/>
+      <footer-comp/>
     </main>
   </div>
 </template>
@@ -17,10 +18,12 @@ query {
 
 <script>
 import HeaderComp from "~/components/Header.vue";
+import FooterComp from "~/components/Footer.vue";
 
 export default {
   components: {
-    HeaderComp
+    HeaderComp,
+    FooterComp
   }
 };
 </script>
