@@ -9,7 +9,7 @@
           </div>
         </div>
 
-        <div class="row full-height justify-content-center align-content-center">
+        <div class="row full-height justify-content-start align-content-center">
           <div class="col-md-9 col-lg-7">
             <slot></slot>
           </div>
@@ -45,12 +45,12 @@ export default {
   width: 100%;
   height: auto;
   overflow: hidden;
-  margin-bottom: -8rem;
 
   @media (min-width: $md) {
     padding-top: 0;
     padding-bottom: 0;
     min-height: 95vh;
+    margin-bottom: -8rem;
   }
 }
 

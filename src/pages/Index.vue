@@ -2,18 +2,14 @@
   <Layout>
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <intro>
-      <tile type="light">
-        <g-image slot="background" src="~/assets/images/jk_dev.jpg"/>
+      <h1 class="title">
+        I am a
+        <br>web developer.
+      </h1>
 
-        <h1 class="title">
-          I am a
-          <br>web developer.
-        </h1>
-
-        <p>I utilize tools afforded me by hours of learning, practicing, testing, failing, and succeeding in order to create digital productls that make an impact in the physical world.</p>
-
-        <logo slot="icon"/>
-      </tile>
+      <p
+        class="lead"
+      >I utilize tools afforded me by hours of learning, practicing, testing, failing, and succeeding in order to create digital productls that make an impact in the physical world.</p>
 
       <!-- <div slot="illustration">
         <desktop/>
